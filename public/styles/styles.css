@@ -1,0 +1,501 @@
+@import url("http://fnt.webink.com/wfs/webink.css/?project=548D2AB5-FEF2-4BB9-BA39-A9506DCC5723&fonts=81DCB682-CEF0-F2EE-50B4-29BCB883721E:f=Ablefont");
+@import url(http://fonts.googleapis.com/css?family=Irish+Grover);
+html {
+  overflow: hidden;
+}
+
+body {
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: Ablefont, Irish Grover;
+  font-color: #7C2A30;
+  height: 100vh;
+  margin: 0 auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  background-color: #D8AE48;
+  border-radius: 40px 0 40px 0;
+  padding: 15px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+.student {
+  display: inline-block;
+  background-color: #D8AE48;
+  border: 10px solid black;
+  border-radius: 10%;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 350px;
+}
+
+.houses-container {
+  background-color: rgba(0, 0, 0, .8);
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, .6);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 30px;
+  width: 100%;
+}
+
+.house {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin: 1%;
+  min-width: 200px;
+  overflow: hidden;
+  padding: 1%;
+  width: 20%;
+}
+
+.house:hover {
+  background-blend-mode: multiply;
+}
+
+.house img {
+  display: block;
+  height: auto;
+  opacity: 0;
+  width: 100%;
+}
+
+.housebanner>img {
+  height: 0px;
+  width: 0px;
+}
+
+img {
+  border-radius: 40%;
+  height: 300px;
+}
+
+.roster {
+  background-color: rgba(0, 0, 0, .8);
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: 500px;
+  padding: 30px;
+  width: 100%;
+}
+
+.roster>ul>li {
+  -ms-align-items: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  height: 2em;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.roster>ul>li>a {
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.roster>h2 {
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
+
+.roster>ul>li:hover>a {
+  font-size: 1.5em;
+}
+
+ul {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.index>form {
+  -ms-align-items: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .9);
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, .6);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  margin: 30px auto;
+  max-width: 500px;
+  padding: 50px 20px;
+}
+
+h2 {
+  margin: 0 auto;
+}
+
+form>h2 {
+  color: white;
+  text-transform: uppercase;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  font-size: 1.3em;
+  height: 40px;
+  max-width: 400px;
+  text-align: center;
+  width: 100%;
+}
+
+select {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 1.3em;
+  height: 40px;
+  max-width: 400px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.submit {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.3em;
+  height: 40px;
+  margin-top: 40px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.submit:hover {
+  background-color: rebeccapurple;
+}
+
+label {
+  color: white;
+  margin-top: 20px;
+  max-width: 400px;
+  text-align: left;
+  width: 100%;
+}
+
+.index {
+  background-image: url('http://kingofwallpapers.com/hogwarts-background/hogwarts-background-013.jpg');
+}
+
+.index>h1,
+.all-students>h1,
+.houses>h1,
+.housebanner>h1,
+.single-student>h1 {
+  font-size: 4em;
+  text-shadow: 0 0 20px rgba(0, 0, 0, .6);
+}
+
+.student-house,
+.edit,
+.delete {
+  background-color: rgba(0, 0, 0, .7);
+  display: block;
+  font-size: 1.5em;
+  max-width: 250px;
+  margin: 20px auto;
+  padding: 10px;
+  width: 100%;
+}
+
+.student-house:hover,
+.edit:hover,
+.delete:hover {
+  color: #111;
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.student-house:hover >a {
+  color: #111;
+}
+
+.delete {
+  border: 0px solid transparent;
+  color: white;
+  cursor: pointer;
+  font-family: Ablefont, Irish Grover;
+}
+
+.index>a {
+  -ms-align-items: center;
+  align-items: center;
+  background-color: rgba(40, 0, 70, .6);
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .6);
+  color: white;
+  cursor: pointer;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  padding: 20px;
+  text-decoration: none;
+  width: 100px;
+}
+
+.index>a:hover {
+  background-color: rgba(40, 0, 70, 1);
+}
+
+.all-students {
+  background-blend-mode: multiply;
+  background-color: gray;
+  background-image: url(http://vignette1.wikia.nocookie.net/harrypotter/images/b/b4/The_Leaving_Feast_-_B4C37M1.png/revision/latest?cb=20151217031002);
+}
+
+.all-students>ul {
+  background-color: rgba(0, 0, 0, .9);
+  margin: 30px auto;
+  max-width: 550px;
+  padding: 30px;
+  width: 100%;
+}
+
+.all-students>ul>li {
+  border-top: 1px solid grey;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, .6);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.all-students>ul>li:first-of-type {
+  border-top: 0px solid transparent;
+}
+
+.all-students>ul>li>a {
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 15px 0;
+  width: 50%;
+}
+
+.all-students>ul>li>a:hover {
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.all-students>ul>li.Gryffindor {
+  background-color: rgba(100, 0, 0, .5);
+}
+
+.all-students>ul>li.Hufflepuff {
+  background-color: rgba(100, 100, 0, .5);
+}
+
+.all-students>ul>li.Ravenclaw {
+  background-color: rgba(0, 0, 100, .5);
+}
+
+.all-students>ul>li.Slytherin {
+  background-color: rgba(0, 100, 0, .5)
+}
+
+.houses {
+  background-image: url(http://pre15.deviantart.net/79fc/th/pre/f/2013/338/6/8/pottermore_background__the_sorting_hat_by_xxtayce-d6wp8hm.jpg);
+  background-position: left;
+}
+
+.house.Gryffindor {
+  background-color: indianred;
+  background-image: url('http://img01.deviantart.net/7548/i/2015/254/2/e/hogwarts_house_wallpaper___gryffindor_by_theladyavatar-d5eyd40.png');
+  background-position: left;
+}
+
+.house.Hufflepuff {
+  background-color: darkgoldenrod;
+  background-image: url(http://img09.deviantart.net/d726/i/2015/263/c/a/hogwarts_house_wallpaper___hufflepuff_by_theladyavatar-d5eydf3.png);
+}
+
+.house.Ravenclaw {
+  background-color: steelblue;
+  background-image: url('http://img11.deviantart.net/747e/i/2015/263/b/c/hogwarts_house_wallpaper___ravenclaw_by_theladyavatar-d5eycw2.png');
+}
+
+.house.Slytherin {
+  background-color: chartreuse;
+  background-image: url('http://img08.deviantart.net/b374/i/2015/263/6/6/hogwarts_house_wallpaper___slytherin_by_theladyavatar-d5eyd9i.png');
+}
+
+.house.housebanner {
+  background-color: transparent;
+  background-image: none;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.housebanner:hover {
+  background-blend-mode: normal;
+}
+
+.single-house.Hufflepuff {
+  background-image: url('http://img14.deviantart.net/59a6/i/2015/263/5/a/harry_potter_wallpaper__hufflepuff_by_theladyavatar-d7lcu3k.jpg');
+}
+
+.single-house.Gryffindor {
+  background-image: url('http://img10.deviantart.net/fc63/i/2014/158/c/c/harry_potter_wallpaper__gryffindor_by_theladyavatar-d7lcrth.jpg');
+}
+
+.single-house.Ravenclaw {
+  background-image: url('http://img15.deviantart.net/7200/i/2015/263/6/0/harry_potter_wallpaper__ravenclaw_by_theladyavatar-d7lcu6u.jpg');
+}
+
+.single-house.Slytherin {
+  background-image: url('http://img04.deviantart.net/eb3b/i/2015/263/b/1/harry_potter_wallpaper__slytherin_by_theladyavatar-d7lcu9g.jpg');
+}
+
+.single-student {
+  background-blend-mode: multiply;
+  background-image: url('https://thechive.files.wordpress.com/2016/04/background-tidbits-on-harry-potter-that-even-the-biggest-fans-dont-know-20-photos-9.jpg?quality=85&strip=info&w=600');
+}
+
+.single-student.Hufflepuff {
+  background-color: rgb(100, 70, 10);
+}
+
+.single-student.Gryffindor {
+  background-color: rgb(100, 20, 20);
+}
+
+.single-student.Ravenclaw {
+  background-color: rgb(20, 30, 100)
+}
+
+.single-student.Slytherin {
+  background-color: rgb(0, 50, 10);
+}
+
+.student-image {
+  height: 40vh;
+  min-height: 300px;
+}
+
+.student-image.wide {
+  height: auto;
+  max-width: 400px;
+  min-height: auto;
+  min-width: 250px;
+  width: 50%;
+}
+
+.other-houses {
+  -ms-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  font-size: 1.3em;
+  height: 3em;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 300px;
+  transition: all .5s ease;
+  width: 100%;
+}
+
+.other-houses:hover {
+  color: #ccc;
+}
+
+.home {
+  background-image: url('http://trusttheleaf.com/assets/svg/home.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+  display: block;
+  height: 50px;
+  left: 10px;
+  position: fixed;
+  top: 10px;
+  width: 50px;
+}
+
+.index>a.edit-student {
+  margin: 30px auto;
+  max-width: 500px;
+  padding: 10px;
+  width: 100%
+}

@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit: {{student.fname}} {{student.lname}}</title>
+  <link type="text/css" rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body class="index">
+
+  <a href="/students/{{student.student_id}}" class="edit-student"><h1>{{student.fname}} {{student.lname}}</h1></a>
+
+  <form action="../{{student.student_id}}" method="post">
+
+    <h2>Edit Student:</h2>
+
+    <input type="hidden" name="_method" value="put">
+
+    <label for="fname">First Name</label>
+    <input id="fname" value={{student.fname}} name="fname" type="text" required placeholder="First Name">
+
+    <label for="lname">Last Name</label>
+    <input id="lname" name="lname" value={{student.lname}} type="text" required placeholder="Last Name">
+
+    <label for="image">Image URL</label>
+    <input id="image" name="image" value={{student.image}} type="text" required placeholder="Image URL">
+
+    <label for="house_id">House</label>
+    <select id="house_id" name="house_id">
+      <option value={{student.id}} selected>{{student.name}}</option>
+      {{#houses}}
+      <option value={{id}}>{{name}}</option>
+      {{/houses}}
+    </select>
+
+    <button class="submit" type="submit" name="add-student" id="add-student" value="Submit">SUBMIT</button>
+    <a class="home" href="/"></a>
+  </form>
+
+
+</body>
+
+</html>

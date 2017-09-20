@@ -1,0 +1,22 @@
+{
+  "name": "hw-w05-d04-do_you_pg_promise",
+  "version": "1.0.0",
+  "description": "![:image](https://media.giphy.com/media/tpwwhv1BLd31e/giphy.gif)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.generalassemb.ly:JackieCasper/hw-w05-d04-do_you_pg_promise.git"
+  },
+  "author": "Ryan Reynolds",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "express": "^4.15.0",
+    "mustache": "^2.3.0",
+    "mustache-express": "^1.2.4",
+    "pg-promise": "^5.6.2"
+  }
+}

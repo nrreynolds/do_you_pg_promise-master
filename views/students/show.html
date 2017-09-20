@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student: {{fname}} {{lname}}</title>
+  <script src="/scripts/jquery.js"></script>
+  <link type="text/css" rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body class="single-student {{name}}">
+
+  <h1>{{fname}} {{lname}}</h1>
+  <img class="student-image" src={{image}} />
+
+  <p class="student-house">House: <a href="/houses/{{id}}">{{name}}</a></p>
+  <a class="edit" href="/students/edit/{{student_id}}">EDIT</a>
+
+  <form method="post" action="/students/{{student_id}}">
+
+    <input type="hidden" name="_method" value="delete">
+    <button class="delete" type="submit">DELETE</button>
+
+  </form>
+  <a class="home" href="/"></a>
+
+  <script>
+    $(() => {
+      const $img = $('.student-image');
+      if ($img.width() > $img.height()) {
+        $img.addClass('wide');
+      }
+    })
+  </script>
+</body>
+
+</html>

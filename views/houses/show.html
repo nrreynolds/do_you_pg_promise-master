@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>House: {{house.name}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body class="single-house {{house.name}}">
+
+  <div class="housebanner house {{house.name}}">
+
+    <h1>{{house.name}}</h1>
+    <img src={{house.img_url}} />
+    <a class="other-houses" href="/houses">Other Houses</a>
+  </div>
+
+  <div class="roster">
+    <h2>Students:</h2>
+
+    <ul>
+
+      {{#students}}
+      <li>
+        <a href="/students/{{student_id}}">{{fname}} {{lname}}</a>
+      </li>
+      {{/students}}
+
+    </ul>
+
+  </div>
+  <a class="home" href="/"></a>
+
+</body>
+
+</html>

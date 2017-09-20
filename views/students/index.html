@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Students</title>
+  <link type="text/css" rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body class="all-students">
+
+  <h1>STUDENTS</h1>
+
+  <ul>
+
+    {{#students}}
+    <li class={{name}}>
+
+      <a href="/students/{{student_id}}">{{ fname }} {{ lname }} </a><a href="/houses/{{house_id}}"> {{name}}</a>
+
+    </li>
+    {{/students}}
+
+  </ul>
+  <a class="home" href="/"></a>
+
+</body>
+
+</html>

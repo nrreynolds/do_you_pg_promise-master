@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Houses</title>
+  <link type="text/css" rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body class="houses">
+
+  <h1>HOUSES</h1>
+  <div class="houses-container">
+
+    {{#houses}}
+    <a href="/houses/{{id}}" class="house {{name}}">
+
+      <h2>{{name}}</h2>
+      <img src={{img_url}} />
+
+    </a>
+    {{/houses}}
+  </div>
+  <a class="home" href="/"></a>
+
+</body>
+
+</html>
